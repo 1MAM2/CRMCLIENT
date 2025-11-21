@@ -2,6 +2,7 @@ import CustomerModal from "@/Companents/AddCustomer";
 import SaleModal from "@/Companents/SaleModal";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { APIConnection } from "@/Services/CustomerService";
 import {
   Users,
   Megaphone,
@@ -16,7 +17,7 @@ export default function HomePage() {
   const [openModal, setOpenModal] = useState(false);
   const [openSaleModal, setOpenSaleModal] = useState(false);
   const navigate = useNavigate();
-  console.log(openModal);
+  console.log(APIConnection);
 
   return (
     <div className="relative min-h-screen bg-linear-to-br from-gray-50 via-gray-100 to-gray-200 p-8">

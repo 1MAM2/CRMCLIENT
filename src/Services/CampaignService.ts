@@ -3,7 +3,7 @@ import type { ApplyCampaignDTO } from "../DTO/ApplyCampaignDTO";
 import type { CreateCampaignForCustomer } from "@/DTO/CreateCampaingForCustomer";
 import type { PurchaseDTO } from "@/DTO/PurchaseDTO";
 
-const APIConnection = import.meta.env.APIConnection || "http://localhost:5080";
+const APIConnection = import.meta.env.VITE_APIConnection;
 
 export const CampaignService = {
   getCampaigns: async () => {
